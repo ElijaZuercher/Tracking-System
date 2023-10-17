@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="trakingsystem//flaticon.css">
+    <script src="script.js"></script>
+    <title>Tracking System</title>
+    <link rel="icon" type="image/x-icon" href="/icons/radar.png">
+</head>
+<body>
+    <h2 class="titelCenter">Aufgabe erfassen</h2>
+    <div class="centerForm">
+        <div class="formCenter">
+            <form id="aufgabenForm">
+                <div class="textForm">Titel <input type="text" class="marginLeft1" id="title" name="title"></div>
+                <span id="errorText" class="is-invalid">Bitte Titel eingeben.</span>
+                <div class="textForm">Beschreibung<input type="text" class="marginLeft2" id="desc" name="desc"></div> 
+                <span id="errorText" class="is-invalid">Bitte Beschreibung eingeben.</span>
+                <div class="centerButton">
+                    <input type="submit" class="buttonStyling" value="Aufgabe erstellen" id="submitButton" onclick="submitForm(); return false; ">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <h2 class="titelSmall">Liste der erfassten Aufgaben</h2>
+    <div class="centerButtons">
+        <label for="labelFilter" class="labelFilter">Option auswählen:</label>
+        <select name="options" id="options" class="options">
+            <option value="nichterledigt">Nicht Erledigt</option>
+            <option value="erledigt">Erledigt</option>
+        </select>
+    </div>
+    
+    <div class="containerList">
+        <ul id="dataList" class="listAufgaben"></ul>
+        
+    </div>
+</body>
+</html>
