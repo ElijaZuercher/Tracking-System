@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="jquery.js"></script>
     <title>Tracking System</title>
     <link rel="icon" type="image/x-icon" href="/icons/radar.png">
 </head>
@@ -45,6 +46,14 @@
     <div class="containerList">
         <ul id="dataList" class="listAufgaben"></ul>
     </div>
+    
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,17 +1,17 @@
 function submitForm() {
 
-    var title = document.getElementById("title").value;
-    var desc = document.getElementById("desc").value;
+    var title = $("#title").val();
+    var desc = $("#desc").val();
 
     if (title === '' || desc === '') {
         var samsa = document.createElement('p')
         samsa.innerText()
     } else {
         var dataList = document.getElementById("dataList");
-        var listItem = document.createElement("p");
-        listItem.classList.add("nichterledigt");
+        var listItem = document.createElement('p');
+       listItem.classList.add("nichterledigt");
 
-        listItem.innerHTML = title + " : " + desc;
+        listItem.innerHTML = title + ": " + desc;
 
         var erledigtCheckbox = document.createElement("input");
         erledigtCheckbox.type = 'checkbox';
@@ -41,6 +41,7 @@ function submitForm() {
         listItem.appendChild(deleteButton);
         dataList.appendChild(listItem);
     }
+    
 
     document.getElementById("options").addEventListener("change", function () {
         const selectedOption = this.value;
@@ -60,5 +61,4 @@ function submitForm() {
             }
         }
     });
-
 }
