@@ -13,13 +13,18 @@
     <h2 class="titelCenter">Aufgabe erfassen</h2>
     <div class="centerForm">
         <div class="formCenter">
-            <form id="aufgabenForm">
-                <div class="textForm">Titel <input type="text" class="marginLeft1" id="title" name="title"></div>
-                <span id="errorText" class="is-invalid">Bitte Titel eingeben.</span>
-                <div class="textForm">Beschreibung<input type="text" class="marginLeft2" id="desc" name="desc"></div> 
-                <span id="errorText" class="is-invalid">Bitte Beschreibung eingeben.</span>
+            <div id="error"></div>
+            <form action= "/" id="aufgabenForm" method="get">
+                <div class="textForm">
+                    <label for="title">Titel</label>
+                    <input type="text" class="marginLeft1" id="title" name="title" required>
+                </div>
+                <div class="textForm">
+                    <label for="desc">Beschreibung</label>
+                    <input type="text" class="marginLeft2" id="desc" name="desc" required>
+                </div>
                 <div class="centerButton">
-                    <input type="submit" class="buttonStyling" value="Aufgabe erstellen" id="submitButton" onclick="submitForm(); return false; ">
+                    <input type="submit" class="buttonStyling" value="Senden" id="submitButton" onclick="submitForm(); return false">
                 </div>
             </form>
         </div>

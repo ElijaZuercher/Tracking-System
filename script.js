@@ -1,13 +1,20 @@
+
 function submitForm() {
-    
+
     var title = document.getElementById("title").value;
     var desc = document.getElementById("desc").value;
-    var dataList = document.getElementById("dataList");
+    
+    if(title === '' || desc === ''){
+        var samsa = document.createElement('p')
+        samsa.innerText()
+    }
+    else {
 
-    var listItem = document.createElement("li");
+    var dataList = document.getElementById("dataList");
+    var listItem = document.createElement("p");
     listItem.classList.add("nichterledigt");
     
-    listItem.innerHTML = "Titel: " + title + "<br> Beschreibung: " + desc;
+    listItem.innerHTML =  title +" : "+ desc;
     
     var erledigtCheckbox = document.createElement("input");
     erledigtCheckbox.type = 'checkbox';
@@ -17,14 +24,15 @@ function submitForm() {
     deleteButton.classList.add("mülleimer")
     deleteButton.src = '/icons/red-mull.png';
     
-    erledigtCheckbox.addEventListener("click", function() {
-        if(erledigtCheckbox.checked){
-        
-        listItem.classList.remove("nichterledigt");
-        listItem.classList.add("erledigt");
-        listItem.classList.add("strikethrough");
+    erledigtCheckbox.addEventListener("click", function() 
+    {
+        if(erledigtCheckbox.checked)
+        {
+            listItem.classList.remove("nichterledigt");
+            listItem.classList.add("erledigt");
+            listItem.classList.add("strikethrough");
         }
-        else{
+        else {
             listItem.classList.remove("strikethrough");
             listItem.classList.remove("erledigt");
             listItem.classList.add("nichterledigt");
@@ -38,6 +46,6 @@ function submitForm() {
     listItem.appendChild(erledigtCheckbox);
     listItem.appendChild(deleteButton);
     dataList.appendChild(listItem);
-
+    }
         
 }
