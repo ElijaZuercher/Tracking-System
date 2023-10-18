@@ -1,8 +1,9 @@
-body{
+body {
     background-color: #2D2D2D;
     min-width: 480px;
 }
-.titelCenter{
+
+.titelCenter {
     display: flex;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,35 +11,42 @@ body{
     margin-top: 200px;
     color: white;
 }
-.formCenter{
+
+.formCenter {
     display: flex;
     justify-content: center;
 }
-.textForm{
+
+.textForm {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     padding-right: 10px;
     margin-bottom: 15px;
     color: white;
 }
-.centerForm{
+
+.centerForm {
     display: flex;
     justify-content: center;
 }
-.marginLeft1{
+
+.marginLeft1 {
     margin-left: 128px;
     height: 20px;
 }
-.marginLeft2{
+
+.marginLeft2 {
     margin-left: 40px;
     height: 20px;
 }
-.centerButton{
+
+.centerButton {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.buttonStyling{
+
+.buttonStyling {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -53,17 +61,20 @@ body{
     border-radius: 5px;
     margin-left: 273px;
 }
-.containerList{
+
+.containerList {
     display: flex;
     justify-content: center;
 }
-.listAufgaben{
+
+.listAufgaben {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 100px;
 }
-.titelSmall{
+
+.titelSmall {
     display: flex;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -71,86 +82,100 @@ body{
     margin-top: 50px;
     color: white;
 }
+
 .strikethrough {
     display: flex;
     align-items: center;
     text-decoration: line-through;
     color: white;
     font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.listElement{
+
+.listElement {
     margin-bottom: 20px;
 }
-.erledigtButton{
+
+.erledigtButton {
     margin-left: 10px;
 }
-.filter{
+
+.filter {
     display: flex;
     justify-content: center;
 }
-.filterDropdown{
+
+.filterDropdown {
     margin-left: 10px;
 }
-.centerButtons{
+
+.centerButtons {
     display: flex;
     justify-content: center;
 }
-.filterErledigt{
+
+.filterErledigt {
     margin-right: 50px;
     border-radius: 7px;
     border: 0px;
     font-size: 18px;
 }
-.nichterledigt{
+
+.nichterledigt {
     display: flex;
     align-items: center;
     color: white;
     font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.filterNichtErledigt{
+
+.filterNichtErledigt {
     border-radius: 7px;
     border: 0px;
     font-size: 18px;
 }
-.button-erledigt{
+
+.button-erledigt {
     margin-right: 10px;
     margin-left: 10px;
     height: 20px;
     width: 20px;
 }
 
-.mülleimer{
+.mülleimer {
     width: 20px;
     height: 20px;
     padding: 0px;
     margin: 0px;
     cursor: pointer;
 }
-.is-invalid{
+
+.is-invalid {
     border: solid 2px;
     color: red;
     display: none;
 }
-.is-valid{
+
+.is-valid {
     border: solid 2px;
     color: green;
     display: none;
 }
-.labelFilter{
+
+.labelFilter {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     margin-right: 25px;
 }
-.options{
+
+.options {
     border-radius: 5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 30px;
     width: 130px;
     padding-left: 5px;

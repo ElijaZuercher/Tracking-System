@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="trakingsystem//flaticon.css">
     <script src="script.js"></script>
     <title>Tracking System</title>
     <link rel="icon" type="image/x-icon" href="/icons/radar.png">
 </head>
+
 <body>
     <h2 class="titelCenter">Aufgabe erfassen</h2>
     <div class="centerForm">
         <div class="formCenter">
             <div id="error"></div>
-            <form action= "/" id="aufgabenForm" method="get">
+            <form action="/" id="aufgabenForm" method="get">
                 <div class="textForm">
                     <label for="title">Titel</label>
                     <input type="text" class="marginLeft1" id="title" name="title" required>
@@ -24,25 +25,26 @@
                     <input type="text" class="marginLeft2" id="desc" name="desc" required>
                 </div>
                 <div class="centerButton">
-                    <input type="submit" class="buttonStyling" value="Senden" id="submitButton" onclick="submitForm(); return false">
+                    <input type="submit" class="buttonStyling" value="Senden" id="submitButton"
+                        onclick="submitForm(); return false">
                 </div>
             </form>
         </div>
     </div>
-    
+
     <h2 class="titelSmall">Liste der erfassten Aufgaben</h2>
     <div class="centerButtons">
         <label for="labelFilter" class="labelFilter">Option auswählen:</label>
         <select name="options" id="options" class="options">
             <option value="alle">Alle</option>
-            <option value="nichterledigt">Nicht Erledigt</option>
+            <option value="nichtErledigt">Nicht Erledigt</option>
             <option value="erledigt">Erledigt</option>
         </select>
     </div>
-    
+
     <div class="containerList">
         <ul id="dataList" class="listAufgaben"></ul>
-        
     </div>
 </body>
+
 </html>
