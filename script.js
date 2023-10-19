@@ -7,7 +7,7 @@ function submitForm() {
         var samsa = document.createElement('p')
         samsa.innerText()
     } else {
-        var dataList = document.getElementById("dataList");
+        let dataList = document.getElementById("dataList");
         var listItem = document.createElement('p');
        listItem.classList.add("nichterledigt");
 
@@ -25,9 +25,7 @@ function submitForm() {
             if (erledigtCheckbox.checked) {
                 listItem.classList.remove("nichterledigt");
                 listItem.classList.add("erledigt");
-                listItem.classList.add("strikethrough");
             } else {
-                listItem.classList.remove("strikethrough");
                 listItem.classList.remove("erledigt");
                 listItem.classList.add("nichterledigt");
             }
@@ -41,7 +39,6 @@ function submitForm() {
         listItem.appendChild(deleteButton);
         dataList.appendChild(listItem);
     }
-    
 
     document.getElementById("options").addEventListener("change", function () {
         const selectedOption = this.value;
