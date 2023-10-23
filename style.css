@@ -83,8 +83,6 @@ body {
     color: white;
 }
 
-
-
 .listElement {
     margin-bottom: 20px;
 }
@@ -113,7 +111,8 @@ body {
     border: 0px;
     font-size: 18px;
 }
-.erledigt{
+
+.erledigt {
     display: flex;
     align-items: center;
     text-decoration: line-through;
@@ -123,6 +122,7 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 .nichterledigt {
     display: flex;
     align-items: center;

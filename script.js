@@ -9,7 +9,7 @@ function submitForm() {
     } else {
         let dataList = document.getElementById("dataList");
         var listItem = document.createElement('p');
-       listItem.classList.add("nichterledigt");
+        listItem.classList.add("nichterledigt");
 
         listItem.innerHTML = title + ": " + desc;
 
